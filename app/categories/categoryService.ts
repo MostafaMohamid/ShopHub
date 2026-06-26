@@ -1,4 +1,4 @@
-import { CategoriesResponse } from "@/src/types/categories";
+import { CategoriesResponse, CategoryResponse } from "@/src/types/categories";
 import { Category } from "@/src/types/categories";
 
 export async function getAllCategories(): Promise<CategoriesResponse> {
@@ -19,7 +19,7 @@ export async function getAllCategories(): Promise<CategoriesResponse> {
 
 export async function getSpecificCategory(
     categoryId: string
-): Promise<Category> {
+): Promise<CategoryResponse> {
     const res = await fetch(
         `https://ecommerce.routemisr.com/api/v1/categories/${categoryId}`,
         {

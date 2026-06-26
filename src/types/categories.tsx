@@ -10,6 +10,9 @@ export interface Metadata {
   limit: number;
 }
 
+export interface CategoryResponse {
+  data: Category;
+}
 export interface Category {
   _id: string;
   name: string;

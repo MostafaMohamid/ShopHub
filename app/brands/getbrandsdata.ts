@@ -1,3 +1,4 @@
+import { productsresponse } from "@/src/types/allproducts";
 import { BrandsResponse } from "@/src/types/brands";
 
 export async function getAllBrands() {
@@ -27,7 +28,7 @@ export async function getSpacificBrand(brandid: string) {
 
 
 
-    const data: BrandsResponse = await res.json();
+    const data: productsresponse = await res.json();
 
 
     return data;
